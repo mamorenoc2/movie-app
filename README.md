@@ -51,3 +51,7 @@ Asegúrate de tener lo siguiente instalado:
    flutter run
    ```
    PD: Si estas en Visual Studio Code es mejor ir a la sección de ejecucción y depuración
+
+## Para tener en cuenta
+
+Dentro del proyecto de Flutter se encuentra un README.md donde se explica que es necesario de tener un KEY API 
