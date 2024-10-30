@@ -4,7 +4,7 @@ import 'package:movie_app/domain/entities/movie.dart';
 
 
 //Los repositorios llaman al datasource
-abstract class MovieRepository {
+abstract class MoviesRepository {
   //El paginado de las películas
   Future <List<Movie>> getNowPlaying ({ int page = 1});
 }
