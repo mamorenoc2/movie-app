@@ -1,3 +1,5 @@
+//Este se podría decir que es el modelo propio del proyecto, que será definido independientemente del la API y el modelo que tenga estructurado la Api, si se cambia de API y se quiere adaptar a esta entidad, entonces se cambia el mapeo de los datos, pero esto no se toca, es trasversal a todas las bases de datos
+
 class Movie {
   final bool adult; //Clasifica si es contenido de adultos
   final String backdropPath; 

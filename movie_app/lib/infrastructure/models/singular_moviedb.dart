@@ -1,5 +1,5 @@
-class MovieMovieDB {
-    MovieMovieDB({
+class SingularMovieDB {
+    SingularMovieDB({
         required this.adult,
         required this.backdropPath,
         required this.genreIds,
@@ -31,7 +31,7 @@ class MovieMovieDB {
     final double voteAverage;
     final int voteCount;
 
-    factory MovieMovieDB.fromJson(Map<String, dynamic> json) => MovieMovieDB(
+    factory SingularMovieDB.fromJson(Map<String, dynamic> json) => SingularMovieDB(
         adult: json["adult"] ?? false,
         backdropPath: json["backdrop_path"] ?? '',
         genreIds: List<int>.from(json["genre_ids"].map((x) => x)),
