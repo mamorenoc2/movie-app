@@ -8,5 +8,6 @@ abstract class MoviesRepository {
   //El paginado de las películas
   Future <List<Movie>> getNowPlaying ({ int page = 1});
   Future<Movie> getMovieById( String id );
+  Future<List<Movie>> searchMovies( String query );
 
 }

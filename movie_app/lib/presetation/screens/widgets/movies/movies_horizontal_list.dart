@@ -55,7 +55,7 @@ class _MovieHorizontalListState extends State<MovieHorizontalList> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 350,
+      height: 380,
       child: Column(
         children: [
 
@@ -74,7 +74,6 @@ class _MovieHorizontalListState extends State<MovieHorizontalList> {
               },
             )
           )
-
         ],
       ),
     );
@@ -130,10 +129,17 @@ class _Slide extends StatelessWidget {
           //* Title
           SizedBox(
             width: 150,
-            child: Text(
-              movie.title,
-              maxLines: 2,
-              style: textStyles.titleSmall,
+            child: Column(
+              children: [
+                Text(
+                  movie.title,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  textAlign: TextAlign.center, 
+                  style: textStyles.titleSmall,
+                ),
+                Text('${movie.releaseDate.toLocal().year}')
+              ],
             ),
           ),
 
